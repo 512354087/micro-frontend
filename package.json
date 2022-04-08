@@ -1,0 +1,11 @@
+{
+  "name": "micro-frontend",
+  "version": "1.0.0",
+  "description": "- 注意root-config 引入的cdn公共版本与各个微应用的版本问题",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
