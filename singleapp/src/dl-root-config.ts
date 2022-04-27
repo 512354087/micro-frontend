@@ -6,25 +6,15 @@ import { registerApplication, start } from "single-spa";
     2. app: 函数类型, 返回 Promise, 通过 systemjs 引用打包好的微前端应用模块代码 (umd)
     3. activeWhen: 路由匹配时激活应用
 */
-// registerApplication({
-//   name: "@single-spa/welcome",
-//   app: () =>
-//     System.import(
-//       "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js"
-//     ),
-//   activeWhen: ["/"],
-// });
-
-
-
-
-
-// Vue2.0 
 registerApplication({
-  name: "@dl/vueapp",
-  app: () => System.import("@dl/vueapp"),
-  activeWhen: ["/vueapp"]
+  name: "@single-spa/welcome",
+  app: () =>
+    System.import(
+      "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js"
+    ),
+  activeWhen: ["/"],
 });
+
 
 // React -- todos 
 registerApplication({
