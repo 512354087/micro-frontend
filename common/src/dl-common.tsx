@@ -1,5 +1,13 @@
-// Anything exported from this file is importable by other in-browser modules.
-export function publicApiFunction() {
-    console.log('公共模块导出')
-    return 'happy star 之 快乐的源泉'
+import DButton from "./components/d-button"
+
+import { publicApiFunction } from '@/utils/test'
+
+// 一些组件
+export {
+  DButton,
+}
+
+// 一些公共的方法
+export {
+    publicApiFunction
 }

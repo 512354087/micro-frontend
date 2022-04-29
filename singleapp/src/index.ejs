@@ -55,7 +55,7 @@
       "imports": {
         "@dl/root-config": "//localhost:9000/dl-root-config.js",
         "@dl/todos": "//localhost:9002/dl-todos.js",
-        "@study/tools": "//localhost:9005/study-tools.js"
+        "@dl/common": "//localhost:9005/dl-common.js"
       }
     }
   </script>
@@ -97,6 +97,7 @@
   <!-- 导入微前端容器应用 -->
   <script>
     System.import('@dl/root-config');
+    // System.import('@dl/dl-common.js');
   </script>
   <!-- 
     import-map-overrides 可以覆盖导入映射

@@ -3,6 +3,9 @@ declare module "*.html" {
   export = rawHtmlFile;
 }
 
+declare module '@dl/common' 
+
+
 declare module "*.bmp" {
   const src: string;
   export default src;
