@@ -24,6 +24,12 @@ registerApplication({
 });
 
 
+// vue -- todos 
+registerApplication({
+  name: "@dl/vuefrontend",
+  app: () => System.import("//localhost:8080/js/app.js"),
+  activeWhen: ["/vue"]
+});
 
 
 
